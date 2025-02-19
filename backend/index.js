@@ -11,7 +11,11 @@ app.use(express.json());
 
 // Ruta de ejemplo
 app.get('/api', (req, res) => {
-  res.json({ message: 'Hola desde el backend. Ahora Siiii que Siii!' });
+  res.json({ message: 'Hola desde el backend. Ahora Siiii con /api!' });
+});
+
+app.get('/', (req, res) => {
+  res.json({ message: 'Hola desde el backend. Ahora Siiii con /!' });
 });
 
 // Iniciar el servidor
