@@ -7,7 +7,7 @@ function App() {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    fetch('/')
+    fetch('https://mi-app-server.onrender.com')
       .then((res) => res.json())
       .then((data) => setMessage(data.message));
   }, []);
