@@ -15,7 +15,7 @@ app.get('/api', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.json({ message: 'Hola desde el backend. Ahora Siiii con /!' });
+  res.json({ message: 'Hola Aricon, respuesta desde el backend, no importa donde sino con quien jjj. Ahora Siiii!' });
 });
 
 // Iniciar el servidor
